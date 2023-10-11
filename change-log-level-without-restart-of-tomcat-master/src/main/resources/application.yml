@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: restapi
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: loggers
+  endpoint:
+    loggers:
+      enabled: true
